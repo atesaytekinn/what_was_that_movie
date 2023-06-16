@@ -2,4 +2,4 @@
 You can see the preprocessing and index creation steps in the **preprocessing** folder.
 Flask app is in the **wwtm_app** folder. <br>
 
-You can download the data [here]([https://link-url-here.org](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?resource=download)
+You can download the data [here](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?resource=download)
