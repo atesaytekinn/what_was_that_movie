@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Query Results
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 ps-md-5">
+
+      <!-- note, the id is not used in the template -->
+
+      <h1 class="pt-5 pb-2">What was that Movie?</h1>
+
+      <p><a href="{{ url_for('index') }}">Return to search page</a></p>
+
+	  <!--
+	      notice how the URL in the link above is rendered for
+	      Flask - it needs to name the FUNCTION, not the route
+      -->
+
+	  <p>Search results for the given query: {{ query }}</p>
+    <ol>
+      <li>{{ results["result_1"] }}</li>
+      <li>{{ results["result_2"] }}</li>
+      <li>{{ results["result_3"] }}</li>
+      <li>{{ results["result_4"] }}</li>
+      <li>{{ results["result_5"] }}</li>
+    </ol>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
